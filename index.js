@@ -1,1 +1,3 @@
-export * from "./src/useScrollDetector";
+import useScrollDetector from "./src/useScrollDetector";
+
+export default useScrollDetector;
