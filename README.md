@@ -6,6 +6,7 @@ The hook returns an array with 3 elements:
 
 - isScrolling: boolean
 - direction: string, this can be "up", "down" or stopped
+- speed: number, represents the scrolling speed
 - position: number, this is just the Y offset of the document
 
 # How to use?
@@ -16,8 +17,8 @@ Simply install the module and import the hook:
 import useScrollDetector from "scroll-detect-hook";
 
 const Section = () => {
-  const [isScrolling, direction, position] = useScrollDetector();
-  console.log({ isScrolling, direction, position });
+  const [isScrolling, direction, speed, position] = useScrollDetector();
+  console.log({ isScrolling, direction, speed, position });
   //   console.log(isScrolling);
   return (
     <div
@@ -26,7 +27,7 @@ const Section = () => {
         backgroundColor: isScrolling ? "yellow" : "blue",
       }}
     >
-      {isScrolling ? "Yes" : "No"}
+      {isScrolling ? "Yes" : "No"}:{speed}:{direction}
     </div>
   );
 };
@@ -34,4 +35,4 @@ const Section = () => {
 export default Section;
 ```
 
-Coming soon: Listen to scrolling of custom elements and add scrolling speed detection
+Coming soon: Listen to scrolling of custom elements
