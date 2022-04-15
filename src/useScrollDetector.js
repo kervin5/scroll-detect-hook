@@ -87,5 +87,5 @@ export default function useScrollDetector() {
     }
   }, [isScrolling, prevPosition, position, scrollingElement]);
 
-  return [isScrolling, direction, scrollSpeed, position];
+  return { isScrolling, direction, scrollSpeed, position };
 }

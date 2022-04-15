@@ -1,6 +1,6 @@
 {
   "name": "scroll-detect-hook",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "This is a hook for React that allows to detect when the window is scrolling and provides you with the direction and position",
   "main": "index.js",
   "scripts": {

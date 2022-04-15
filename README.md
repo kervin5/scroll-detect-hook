@@ -17,7 +17,7 @@ Simply install the module and import the hook:
 import useScrollDetector from "scroll-detect-hook";
 
 const Section = () => {
-  const [isScrolling, direction, speed, position] = useScrollDetector();
+  const { isScrolling, direction, speed, position } = useScrollDetector();
   console.log({ isScrolling, direction, speed, position });
   //   console.log(isScrolling);
   return (
